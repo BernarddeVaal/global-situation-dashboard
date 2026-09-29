@@ -14,3 +14,13 @@
 .edgeHash { overflow-wrap: anywhere; }
 .edgeAssessment pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 300px; overflow-y: auto; font-size: 11px; }
 .edgeAssessment details { margin-top: 10px; }
+
+.task2Box { margin: 14px 0; padding: 12px; border: 1px solid #3f7282; border-radius: 7px; background: #0d202a; }
+.task2Box h3 { margin: 0 0 8px; color: #9ce9f6; font-size: 14px; letter-spacing: 1px; }
+.task2Run { width: 100%; font-weight: 700; }
+.task2TableWrap { overflow-x: auto; margin: 10px 0; border: 1px solid #294c58; }
+.task2Table { width: 100%; min-width: 1050px; border-collapse: collapse; background: #08151c; }
+.task2Table th, .task2Table td { border: 1px solid #294c58; padding: 9px; vertical-align: top; text-align: left; line-height: 1.35; }
+.task2Table thead th { background: #12303d; color: #9ce9f6; }
+.task2Table tbody th { width: 220px; color: #f1d18b; background: #0d202a; }
+.task2Table td { min-width: 190px; color: #d7e4e9; }
