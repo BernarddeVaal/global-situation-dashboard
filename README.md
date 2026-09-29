@@ -1,5 +1,20 @@
 # Global Situation Dashboard
 
+## ICE Task 3 and ICE Task 4 — Jacobus de Vaal
+
+| Assignment | Dashboard brief section | Work |
+|---|---|---|
+| **ICE Task 3** | Task 1 | Local dashboard setup, deterministic/probabilistic comparison, and Tencent R3-Skill |
+| **ICE Task 4** | Task 2 | Query, Record, and Reflect: six standard questions, repeated answers, and video |
+
+See [ASSESSMENT.md](ASSESSMENT.md) for implementation and recording instructions.
+
+Existing ICE Task 3 evidence: [A/B comparison](edge-assessment-evidence.json) and [Model C evidence](model%20c%20evidence.json). The files under `assessment/` also include development verification evidence; see their provenance in [VERIFICATION.md](assessment/VERIFICATION.md).
+
+Audit on 29 September 2026: ICE Task 4 code is present (model version 1.1.1). The corrected `task2-standard-questions-evidence (1).json` was reviewed separately but is not committed here. No assessment video is present in this branch. Repository contents do not confirm submission through the college portal.
+
+---
+
 A real-time open-source intelligence (OSINT), cyber threat monitoring, disaster awareness, network intelligence, space operations, aviation tracking, maritime awareness, and AI-assisted situational awareness platform built with React, Vite, Three.js, React Globe GL, Satellite.js, and Ollama.
 
 The Global Situation Dashboard provides a centralized operational picture of events occurring across multiple intelligence domains. By combining live cyber threat feeds, disaster monitoring systems, space tracking, network intelligence, aviation monitoring, maritime awareness, and a local AI analyst assistant, the platform delivers a single pane of glass for understanding what is happening around the world.
