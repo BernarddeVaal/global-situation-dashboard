@@ -68,3 +68,17 @@ test('Task 2 Model B answers reflect sampled priorities but remain grounded in t
   assert.match(lowDraw.questions[3].answer, /cannot be determined/i)
   assert.match(highDraw.questions[3].answer, /cannot be determined/i)
 })
+
+
+test('Task 2 regional risk ignores non-geographic source identifiers such as SIVolcano', () => {
+  const events = normalize([
+    { id: 'q1', type: 'Earthquake', title: 'M5.3 Earthquake', magnitude: 5.3, location: '76 km NE of Tadine, New Caledonia', source: 'USGS' },
+    { id: 'q2', type: 'Earthquake', title: 'M5.0 Earthquake', magnitude: 5.0, location: '77 km ENE of Tadine, New Caledonia', source: 'USGS' },
+    { id: 'v1', type: 'Volcano', title: 'Volcano A', location: 'SIVolcano', source: 'NASA EONET' },
+    { id: 'v2', type: 'Volcano', title: 'Volcano B', location: 'SIVolcano', source: 'NASA EONET' },
+  ])
+  const result = answerStandardQuestions(events, 'B', () => .999999)
+  const regionalAnswer = result.questions[1].answer
+  assert.match(regionalAnswer, /New Caledonia/)
+  assert.doesNotMatch(regionalAnswer, /SIVolcano/)
+})
