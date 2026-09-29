@@ -5,14 +5,17 @@ import './EdgeAssessment.css'
 export default function EdgeAssessment({ events }) {
   const [snapshot, setSnapshot] = useState(null)
   const [source, setSource] = useState('')
+  const [capturedAt, setCapturedAt] = useState(null)
   const [question, setQuestion] = useState('Which skill can review earthquake magnitudes in these events?')
   const [result, setResult] = useState(null)
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
 
   function freeze(data, label) {
-    setSnapshot(JSON.parse(JSON.stringify(data)))
-    setSource(`${label} — captured ${new Date().toISOString()}`)
+    const time = new Date().toISOString()
+    setCapturedAt(time)
+    setSnapshot(data.map(({ id, type, title, location, details, time, source, magnitude, cvss, knownExploited }) => ({ id, type, title, location, details, time, source, magnitude, cvss, knownExploited })))
+    setSource(`${label} — captured ${time}`)
     setResult(null)
     setError('')
   }
@@ -32,7 +35,14 @@ export default function EdgeAssessment({ events }) {
   }
 
   function download() {
-    const blob = new Blob([JSON.stringify({ source, question, snapshot, result }, null, 2)], { type: 'application/json' })
+    const blob = new Blob([JSON.stringify({
+      schemaVersion: 2,
+      assignment: result?.standardQuestions ? 'ICE Task 4' : 'ICE Task 3',
+      capturedAt, exportedAt: new Date().toISOString(),
+      source, synthetic: source.startsWith('SYNTHETIC'),
+      ...(result?.standardQuestions ? {} : { question }),
+      snapshot, result,
+    }, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
@@ -85,9 +95,19 @@ export default function EdgeAssessment({ events }) {
 
       {task2 && <>
         <p><strong>ICE Task 4 result:</strong> {result.runsPerModel} runs per model. Model A produced {result.uniqueA} unique answer set(s); Model B produced {result.uniqueB}. {result.interpretation}</p>
+        <div className="task2Summary">
+          <h4>What changed between runs?</h4>
+          <p>Same answers do not prove correctness. Different answers do not prove better accuracy.</p>
+          <p>Seismic and cyber facts use the fixed source data. Sampling can change the regional ranking and recommended review count.</p>
+          <p>Regions are ranked using earthquake records only. Volcano and cyber locations cannot support an overall geographic risk ranking.</p>
+        </div>
         <div className="task2Cards">
           {task2.map((standardQuestion, index) => <article className="task2QuestionCard" key={standardQuestion}>
             <h4>{index + 1}. {standardQuestion}</h4>
+            <p className="task2Change">
+              A: {result.modelA?.[0]?.questions?.[index]?.answer === result.modelA?.[1]?.questions?.[index]?.answer ? 'Identical' : 'Changed — investigate'}
+              {' · '}B: {result.modelB?.[0]?.questions?.[index]?.answer === result.modelB?.[1]?.questions?.[index]?.answer ? 'Identical' : 'Changed'}
+            </p>
             <div className="task2Answer">
               <strong>Model A — Run 1</strong>
               <p>{result.modelA?.[0]?.questions?.[index]?.answer}</p>
@@ -122,3 +142,4 @@ export default function EdgeAssessment({ events }) {
     </div>}
   </section>
 }
+

@@ -2,7 +2,7 @@
 import { createHash, randomInt } from 'node:crypto'
 
 export const LEVELS = ['LOW', 'MODERATE', 'HIGH', 'CRITICAL']
-export const VERSION = '1.1.1'
+export const VERSION = '1.2.0'
 export const STANDARD_QUESTIONS = [
   'Is there significant seismic activity right now, based on the current data?',
   'Which region currently shows the highest overall risk?',
@@ -107,7 +107,7 @@ function highestMagnitude(events) {
 }
 
 function highestCyber(events) {
-  const candidates = events.filter(e => e.knownExploited || (e.type === 'CVE' && e.cvss !== null))
+  const candidates = events.filter(e => e.knownExploited || (e.type === 'CVE' && e.cvss !== null && e.cvss >= 0 && e.cvss <= 10))
   return candidates.reduce((best, e) => {
     const score = e.knownExploited ? 10.5 : e.cvss
     const bestScore = !best ? -1 : (best.knownExploited ? 10.5 : best.cvss)
@@ -159,15 +159,15 @@ function questionAnswers(events, output, model) {
   const highOrCritical = (counts.HIGH || 0) + (counts.CRITICAL || 0)
 
   const seismic = quake
-    ? `Yes. The snapshot contains ${quakeCount} earthquakes, with a highest recorded magnitude of ${quake.magnitude} at ${quake.location || 'an unspecified location'}; under this classroom model, magnitude 5 or above is prioritised as HIGH.`
+    ? `${quake.magnitude >= 5 ? 'Yes, under the classroom threshold.' : 'No earthquake reaches the classroom significance threshold of magnitude 5.'} The snapshot contains ${quakeCount} earthquakes, with a highest recorded magnitude of ${quake.magnitude} at ${quake.location || 'an unspecified location'}; under this classroom model, magnitude 5 or above is prioritised as HIGH.`
     : 'No significant seismic conclusion can be made because this snapshot contains no earthquakes with usable magnitude data.'
 
   const regional = region
-    ? `${region[0]} shows the highest aggregate geographic review priority among records with usable region labels in this snapshot, based on ${region[1].high} HIGH/CRITICAL event(s) and ${region[1].total} supplied event(s).`
-    : 'No geographic region can be ranked from the supplied snapshot because the available records do not contain usable non-cyber locations.'
+    ? `${region[0]} ranks first for earthquake review priority among usable earthquake region labels in this snapshot; this is not an overall multi-hazard risk ranking, based on ${region[1].high} HIGH/CRITICAL event(s) and ${region[1].total} supplied event(s).`
+    : 'No geographic region can be ranked from the supplied snapshot because the available records do not contain usable earthquake locations.'
 
   const cyberSentence = cyber
-    ? `Cybersecurity threat level is elevated to high review priority today because the snapshot contains ${cyberCount} cyber records and the most severe supplied item is ${cyber.title}${cyber.knownExploited ? ', recorded as known exploited' : ` with CVSS ${cyber.cvss}`}.`
+    ? `The snapshot indicates ${LEVELS[classify(cyber).index]} rule-based cyber review priority because the snapshot contains ${cyberCount} cyber records and the most severe supplied item is ${cyber.title}${cyber.knownExploited ? ', recorded as known exploited' : ` with CVSS ${cyber.cvss}`}.`
     : 'Cybersecurity threat level cannot be assessed from this snapshot because no usable CVE or known-exploited records are present.'
 
   const volcano = volcanoCount
@@ -209,6 +209,14 @@ export function standardQuestionComparison(events, runs = 2) {
     modelB: b,
     uniqueA: uniqueAnswers(a),
     uniqueB: uniqueAnswers(b),
-    interpretation: 'Model A should be identical for the same frozen snapshot. Model B may vary because its event priorities are sampled.',
+    assignment: 'ICE Task 4',
+    completedAt: new Date().toISOString(),
+    comparison: STANDARD_QUESTIONS.map((question, index) => {
+      const distinct = values => new Set(values.map(run => run.questions[index].answer)).size
+      return { question, uniqueA: distinct(a), uniqueB: distinct(b),
+        changedA: distinct(a) > 1, changedB: distinct(b) > 1 }
+    }),
+    interpretation: 'Repeatability is not accuracy. Model A should repeat exactly. Model B may vary because it samples priorities; identical draws are also valid. Two runs cannot estimate reliability. Seismic facts, cyber source severity and the missing volcano trend remain grounded in the same snapshot.',
   }
 }
+

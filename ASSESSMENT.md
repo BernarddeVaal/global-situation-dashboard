@@ -143,3 +143,16 @@ Model A answers are derived from the same fixed review rules already used for ev
 The weekly volcano question is deliberately conservative: the live EONET panel supplies current open records, not a complete weekly historical time series. Both models therefore state that an up/down weekly trend cannot be established from the frozen point-in-time snapshot rather than inventing a trend.
 
 For the video, keep the ICE Task 4 table and snapshot hash visible while briefly showing both repeated runs. The existing **Compare 20 runs** control remains useful as additional consistency evidence, but it does not replace the required six-question demonstration.
+
+
+### ICE Task 4 improvements — model version 1.2.0
+
+Each question now shows whether A and B changed between the two runs. The result also exports a per-question comparison and completion timestamp. Identical probabilistic draws remain valid: variation measures consistency, not accuracy, and two runs do not estimate reliability.
+
+New downloads include the assignment label, schema version, snapshot capture time, export time, synthetic-data flag, source and full results. Snapshots contain analysis fields only, excluding globe rendering objects. Capture time is not a guarantee that all feeds are fresh. The snapshot hash still identifies the normalised model input.
+
+Seismic answers now distinguish magnitudes below the classroom threshold of 5. Cyber review priority follows the actual rule-based severity and excludes invalid CVSS values. Regional answers explicitly cover earthquake records only; the supplied locations cannot establish overall multi-hazard regional risk.
+
+Validation: eight automated model tests passed, including low-severity inputs, invalid CVSS, repeated answers and identical probabilistic results. A browser visual check and full frontend build were not performed in this update.
+
+The earlier corrected evidence remains a historical version 1.1.1 run. Keep it unchanged. Generate a new ICE Task 4 export after updating the local code to demonstrate version 1.2.0; do not relabel earlier outputs as results from the new version. Video work is deferred.

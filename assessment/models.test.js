@@ -82,3 +82,29 @@ test('Task 2 regional risk ignores non-geographic source identifiers such as SIV
   assert.match(regionalAnswer, /New Caledonia/)
   assert.doesNotMatch(regionalAnswer, /SIVolcano/)
 })
+
+
+test('ICE Task 4 does not describe low source values as significant or high', () => {
+  const events = normalize([
+    { id: 'q', type: 'Earthquake', magnitude: 2, location: 'Alaska' },
+    { id: 'c', type: 'CVE', cvss: 2, title: 'Low CVSS item' },
+  ])
+  for (const model of ['A', 'B']) {
+    const result = answerStandardQuestions(events, model, () => .999999)
+    assert.match(result.questions[0].answer, /^No earthquake reaches/)
+    assert.match(result.questions[2].answer, /LOW rule-based/)
+    assert.match(result.questions[1].answer, /not an overall multi-hazard/)
+  }
+  const invalid = answerStandardQuestions(normalize([{ type: 'CVE', cvss: 11 }]))
+  assert.match(invalid.questions[2].answer, /cannot be assessed/)
+})
+
+test('ICE Task 4 comparison reports observed variation honestly, including identical draws', () => {
+  const result = standardQuestionComparison(normalize([{ type: 'CVE' }]))
+  assert.equal(result.assignment, 'ICE Task 4')
+  assert.ok(Number.isFinite(Date.parse(result.completedAt)))
+  assert.equal(result.comparison.length, 6)
+  assert.ok(result.comparison.every(row => !row.changedA && !row.changedB))
+  assert.equal(result.uniqueB, 1)
+  assert.match(result.interpretation, /identical draws are also valid/)
+})

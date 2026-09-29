@@ -24,3 +24,13 @@
 .task2Table thead th { background: #12303d; color: #9ce9f6; }
 .task2Table tbody th { width: 220px; color: #f1d18b; background: #0d202a; }
 .task2Table td { min-width: 190px; color: #d7e4e9; }
+
+
+.task2Cards { display: grid; gap: 12px; }
+.task2QuestionCard { border: 1px solid #3f7282; border-radius: 7px; padding: 12px; overflow-wrap: anywhere; }
+.task2QuestionCard h4 { margin: 0 0 10px; color: #9ce9f6; line-height: 1.5; }
+.task2Answer { padding: 8px 0; border-top: 1px solid #294c58; }
+.task2Answer strong { color: #f1d18b; }
+.task2Change { background: #16394a; padding: 7px; border-radius: 4px; font-weight: 600; }
+.task2Summary { padding: 12px; margin: 12px 0; background: #0d202a; border-left: 3px solid #7fdef0; }
+.task2Summary h4 { margin: 0; color: #9ce9f6; }
