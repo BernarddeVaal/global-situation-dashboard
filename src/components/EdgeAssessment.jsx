@@ -36,7 +36,7 @@ export default function EdgeAssessment({ events }) {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = result?.standardQuestions ? 'task2-standard-questions-evidence.json' : 'edge-assessment-evidence.json'
+    link.download = result?.standardQuestions ? 'ice-task-4-standard-questions-evidence.json' : 'ice-task-3-edge-assessment-evidence.json'
     link.click()
     setTimeout(() => URL.revokeObjectURL(url), 1000)
   }
@@ -45,8 +45,8 @@ export default function EdgeAssessment({ events }) {
   const task2 = result?.standardQuestions
 
   return <section className="edgeAssessment" aria-label="Edge AI assessment">
-    <h2>EDGE AI ASSESSMENT</h2>
-    <p>Local A / B comparison, Task 2 standard questions, and Tencent R3-Skill routing.</p>
+    <h2>ICE TASK 3 &amp; 4 — EDGE AI ASSESSMENT</h2>
+    <p>ICE Task 3: local A / B comparison and Tencent R3-Skill. ICE Task 4: standard questions and reflection.</p>
     <p className="edgeMuted">Freeze fetched events before testing. All A/B model logic runs locally on this machine.</p>
 
     <div className="edgeButtons">
@@ -64,7 +64,7 @@ export default function EdgeAssessment({ events }) {
     </div>
 
     <div className="task2Box">
-      <h3>TASK 2 — STANDARD QUESTIONS</h3>
+      <h3>ICE TASK 4 — STANDARD QUESTIONS</h3>
       <p className="edgeMuted">Runs the lecturer's exact six questions twice per model against the same frozen snapshot.</p>
       <button className="task2Run" disabled={busy || !snapshot?.length} onClick={() => run('questions')}>
         Run standard questions ×2
@@ -84,7 +84,7 @@ export default function EdgeAssessment({ events }) {
       {result.runsPerModel && !task2 && <p><strong>{result.runsPerModel} identical-input runs:</strong> A produced {result.uniqueA} unique output(s); B produced {result.uniqueB}. {result.interpretation}</p>}
 
       {task2 && <>
-        <p><strong>Task 2 result:</strong> {result.runsPerModel} runs per model. Model A produced {result.uniqueA} unique answer set(s); Model B produced {result.uniqueB}. {result.interpretation}</p>
+        <p><strong>ICE Task 4 result:</strong> {result.runsPerModel} runs per model. Model A produced {result.uniqueA} unique answer set(s); Model B produced {result.uniqueB}. {result.interpretation}</p>
         <div className="task2Cards">
           {task2.map((standardQuestion, index) => <article className="task2QuestionCard" key={standardQuestion}>
             <h4>{index + 1}. {standardQuestion}</h4>
