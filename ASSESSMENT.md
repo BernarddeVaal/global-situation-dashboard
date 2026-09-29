@@ -123,3 +123,23 @@ Tencent (2026) *R3-Skill: Skill Is Not Document*. Available at: https://github.c
 Tencent (2026) *R3-embedding-0.6b*. Available at: https://huggingface.co/tencent/R3-embedding-0.6b (Accessed: 29 September 2026).
 
 Tencent (2026) *R3-rerank-0.6b*. Available at: https://huggingface.co/tencent/R3-rerank-0.6b (Accessed: 29 September 2026).
+
+
+## Task 2 — Query, Record, and Reflect
+
+The dashboard now includes a **TASK 2 — STANDARD QUESTIONS** control in the Edge AI Assessment panel. Use a frozen live dashboard snapshot, then select **Run standard questions ×2**. The application sends the exact six lecturer-supplied questions to Model A and Model B twice each while keeping the snapshot hash fixed.
+
+The Task 2 evidence view shows:
+
+- the exact six standard questions;
+- Model A Run 1 and Run 2;
+- Model B Run 1 and Run 2;
+- the SHA-256 of the frozen normalised dashboard input;
+- the number of unique answer sets produced by each model; and
+- a downloadable `task2-standard-questions-evidence.json` file.
+
+Model A answers are derived from the same fixed review rules already used for event classification. Model B first samples its event review priorities from the existing hand-specified categorical distributions and then derives its answers from that sampled view. As a result, Model A should repeat exactly while Model B may differ between runs.
+
+The weekly volcano question is deliberately conservative: the live EONET panel supplies current open records, not a complete weekly historical time series. Both models therefore state that an up/down weekly trend cannot be established from the frozen point-in-time snapshot rather than inventing a trend.
+
+For the video, keep the Task 2 table and snapshot hash visible while briefly showing both repeated runs. The existing **Compare 20 runs** control remains useful as additional consistency evidence, but it does not replace the required six-question demonstration.
