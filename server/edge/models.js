@@ -116,9 +116,17 @@ function highestCyber(events) {
 }
 
 function regionLabel(event) {
-  if (!event?.location) return 'No specific region'
-  const parts = event.location.split(',').map(s => s.trim()).filter(Boolean)
-  return parts.at(-1) || event.location
+  if (!event?.location) return null
+  const raw = event.location.trim()
+  if (!raw) return null
+
+  // Current volcano records store a source/feed identifier in location (for example
+  // "SIVolcano"), not a geographic region. Cyber records also use display placeholders.
+  // Only use locations that are genuinely geographic for the regional comparison.
+  if (event.type !== 'Earthquake') return null
+
+  const parts = raw.split(',').map(s => s.trim()).filter(Boolean)
+  return parts.at(-1) || raw
 }
 
 function topRiskRegion(events, output) {
@@ -126,8 +134,8 @@ function topRiskRegion(events, output) {
   const rank = { UNKNOWN: 0, LOW: 1, MODERATE: 2, HIGH: 3, CRITICAL: 4 }
   const groups = new Map()
   for (const event of events) {
-    if (event.type === 'CVE' || event.type === 'Cyber Alert') continue
     const key = regionLabel(event)
+    if (!key) continue
     const value = rank[byId.get(event.id)] || 0
     if (!groups.has(key)) groups.set(key, { score: 0, high: 0, total: 0 })
     const g = groups.get(key)
@@ -155,7 +163,7 @@ function questionAnswers(events, output, model) {
     : 'No significant seismic conclusion can be made because this snapshot contains no earthquakes with usable magnitude data.'
 
   const regional = region
-    ? `${region[0]} shows the highest aggregate non-cyber review priority in this snapshot, based on ${region[1].high} HIGH/CRITICAL event(s) and ${region[1].total} supplied event(s).`
+    ? `${region[0]} shows the highest aggregate geographic review priority among records with usable region labels in this snapshot, based on ${region[1].high} HIGH/CRITICAL event(s) and ${region[1].total} supplied event(s).`
     : 'No geographic region can be ranked from the supplied snapshot because the available records do not contain usable non-cyber locations.'
 
   const cyberSentence = cyber
