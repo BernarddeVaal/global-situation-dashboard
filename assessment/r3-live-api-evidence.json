@@ -1,0 +1,32 @@
+{
+  "source": "Real USGS snapshot used for local API test",
+  "result": {
+    "snapshotHash": "80402b7835426277fe851c30fbdc6a4623609664a680c16dfd48b8b7a2d51db8",
+    "model": "C",
+    "models": [
+      "tencent/R3-embedding-0.6b",
+      "tencent/R3-rerank-0.6b"
+    ],
+    "method": "local embedding recall then cross-encoder reranking",
+    "topSkills": [
+      {
+        "id": "earthquake-review",
+        "score": 0.5769548416137695,
+        "embeddingCosine": 0.641639232635498
+      },
+      {
+        "id": "vulnerability-review",
+        "score": -1.4277276992797852,
+        "embeddingCosine": 0.38672155141830444
+      },
+      {
+        "id": "exploitation-review",
+        "score": -1.7142648696899414,
+        "embeddingCosine": 0.2554999589920044
+      }
+    ],
+    "handlerResult": "earthquake-review selected: 39 matching records. Highest supplied magnitude: 5.4. Examples: M2.74 Earthquake; M2.5 Earthquake; M2.5 Earthquake. Review aid only; no forecast or confirmation of local impact.",
+    "queryUsed": "Which skill can review earthquake magnitudes?\nDashboard sample: [{\"type\": \"Earthquake\", \"title\": \"M2.74 Earthquake\", \"magnitude\": 2.74, \"cvss\": null}, {\"type\": \"Earthquake\", \"title\": \"M2.5 Earthquake\", \"magnitude\": 2.5, \"cvss\": null}, {\"type\": \"Earthquake\", \"title\": \"M2.5 Earthquake\", \"magnitude\": 2.5, \"cvss\": null}, {\"type\": \"Earthquake\", \"title\": \"M4.8 Earthquake\", \"magnitude\": 4.8, \"cvss\": null}, {\"type\": \"Earthquake\", \"title\": \"M4.4 Earthquake\", \"magnitude\": 4.4, \"cvss\": null}]",
+    "limitations": "Routing uses the question plus the first five records. The selected fixed handler uses all records. Ranking scores are not calibrated probabilities."
+  }
+}

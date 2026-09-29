@@ -1,0 +1,7 @@
+[
+  {"id":"demo-earthquake","type":"Earthquake","title":"DEMO magnitude 5.8 earthquake","magnitude":5.8,"source":"Synthetic assessment fixture","details":"Invented event for repeatability testing; not a live report."},
+  {"id":"demo-volcano","type":"Volcano","title":"DEMO open volcano record","source":"Synthetic assessment fixture","details":"No measured eruption severity supplied."},
+  {"id":"demo-cve","type":"CVE","title":"DEMO vulnerability","cvss":9.1,"source":"Synthetic assessment fixture"},
+  {"id":"demo-kev","type":"Cyber Alert","title":"DEMO known-exploited vulnerability","knownExploited":true,"source":"Synthetic assessment fixture"},
+  {"id":"demo-missing","type":"CVE","title":"DEMO missing CVSS","source":"Synthetic assessment fixture"}
+]

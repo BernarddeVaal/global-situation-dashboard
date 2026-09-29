@@ -35,3 +35,7 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+.venv/
+models/
+__pycache__/
+assessment/local-evidence*.json

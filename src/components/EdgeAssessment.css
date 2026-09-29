@@ -1,0 +1,16 @@
+.edgeAssessment { border: 1px solid #277f91; border-radius: 10px; background: #091922; color: #e8f1f6; padding: 15px; margin-bottom: 20px; text-align: left; font-size: 13px; }
+.edgeAssessment h2 { color: #7fdef0; font-size: 18px; }
+.edgeAssessment p { margin: 9px 0; line-height: 1.5; }
+.edgeAssessment button { background: #16394a; color: #f2faff; border: 1px solid #358096; border-radius: 5px; padding: 9px 10px; cursor: pointer; font-size: 12px; }
+.edgeAssessment button:disabled { opacity: .45; cursor: not-allowed; }
+.edgeButtons { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0; }
+.edgeAssessment textarea { width: 100%; box-sizing: border-box; min-height: 76px; margin: 7px 0; padding: 8px; border-radius: 5px; border: 1px solid #4b6470; background: #101e28; color: #fff; }
+.edgeMuted, .edgeAssessment small { color: #b5c6d0; }
+.edgeAssessment small { display: block; margin: 6px 0; }
+.edgeSource { color: #ffcf7a; }
+.edgeAssessment li { margin-bottom: 9px; overflow-wrap: anywhere; }
+.edgeAssessment ul, .edgeAssessment ol { padding-left: 19px; }
+.edgeError { color: #ffb2ac; }
+.edgeHash { overflow-wrap: anywhere; }
+.edgeAssessment pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 300px; overflow-y: auto; font-size: 11px; }
+.edgeAssessment details { margin-top: 10px; }

@@ -1,0 +1,28 @@
+{
+  "model": "C",
+  "models": [
+    "tencent/R3-embedding-0.6b",
+    "tencent/R3-rerank-0.6b"
+  ],
+  "method": "local embedding recall then cross-encoder reranking",
+  "topSkills": [
+    {
+      "id": "earthquake-review",
+      "score": 0.6287670135498047,
+      "embeddingCosine": 0.6193579435348511
+    },
+    {
+      "id": "volcano-review",
+      "score": -1.3630867004394531,
+      "embeddingCosine": 0.49275150895118713
+    },
+    {
+      "id": "vulnerability-review",
+      "score": -1.3914899826049805,
+      "embeddingCosine": 0.5492244958877563
+    }
+  ],
+  "handlerResult": "earthquake-review selected: 1 matching records. Highest supplied magnitude: 5.8. Examples: DEMO magnitude 5.8 earthquake. Review aid only; no forecast or confirmation of local impact.",
+  "queryUsed": "Which skill can review earthquake magnitudes?\nDashboard sample: [{\"type\": \"Earthquake\", \"title\": \"DEMO magnitude 5.8 earthquake\", \"magnitude\": 5.8, \"cvss\": null}, {\"type\": \"Volcano\", \"title\": \"DEMO open volcano record\", \"magnitude\": null, \"cvss\": null}, {\"type\": \"CVE\", \"title\": \"DEMO vulnerability\", \"magnitude\": null, \"cvss\": 9.1}, {\"type\": \"Cyber Alert\", \"title\": \"DEMO known-exploited vulnerability\", \"magnitude\": null, \"cvss\": null}, {\"type\": \"CVE\", \"title\": \"DEMO missing CVSS\", \"magnitude\": null, \"cvss\": null}]",
+  "limitations": "Routing uses the question plus the first five records. The selected fixed handler uses all records. Ranking scores are not calibrated probabilities."
+}

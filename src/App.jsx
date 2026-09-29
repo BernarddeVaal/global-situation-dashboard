@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import './App.css'
 import * as satellite from 'satellite.js'
 import ReactMarkdown from 'react-markdown'
+import EdgeAssessment from './components/EdgeAssessment'
 
   const CLOUDFLARE_RADAR_TOKEN = ''
   const BGP_API_TOKEN = ''
@@ -297,6 +298,7 @@ if (Number.isFinite(orbitLat) && Number.isFinite(orbitLng)) {
             lng,
             size: Math.max(0.25, magnitude / 8),
             color: magnitude >= 5 ? '#ff3b3b' : '#ffaa00',
+            id: quake.id, magnitude, source: 'USGS',
             title: `M${magnitude} Earthquake`,
             type: 'Earthquake',
             location: quake.properties.place,
@@ -368,6 +370,7 @@ useEffect(() => {
           lng: geometry.coordinates[0],
           size: 0.65,
           color: '#ff4d00',
+          id: event.id, source: 'NASA EONET',
           title: event.title,
           type: 'Volcano',
           location: event.sources?.[0]?.id || 'NASA EONET',
@@ -407,7 +410,7 @@ useEffect(() => {
       const cveEvents = data.vulnerabilities.map((item) => {
         const cve = item.cve
         const metrics = cve.metrics?.cvssMetricV31?.[0] || cve.metrics?.cvssMetricV30?.[0]
-        const score = metrics?.cvssData?.baseScore || 0
+        const score = metrics?.cvssData?.baseScore ?? null
         const severity = metrics?.cvssData?.baseSeverity || 'UNKNOWN'
 
         return {
@@ -415,6 +418,7 @@ useEffect(() => {
           lng: -122.4194,
           size: score >= 9 ? 0.7 : score >= 7 ? 0.55 : 0.4,
           color: score >= 9 ? '#ff0033' : score >= 7 ? '#ff8800' : '#ffee00',
+          id: cve.id, cvss: score, source: 'NVD',
           title: cve.id,
           type: 'CVE',
           location: 'Cyber Intelligence',
@@ -457,6 +461,7 @@ useEffect(() => {
           lng: -77.0365 + (Math.random() - 0.5) * 8,
           size: 0.9,
           color: '#ff0000',
+          id: `kev-${vuln.cveID}`, knownExploited: true, source: 'CISA KEV',
           title: vuln.cveID,
           type: 'Cyber Alert',
           location: vuln.vendorProject,
@@ -1384,7 +1389,7 @@ const askDashboardAssistant = async () => {
   }
 
   try {
-    const response = await fetch('http://localhost:5050/api/assistant', {
+    const response = await fetch('/api/assistant', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -1732,6 +1737,7 @@ const askDashboardAssistant = async () => {
       </main>
 
       <aside className="panel rightPanel">
+        <EdgeAssessment events={[...earthquakes, ...volcanoes, ...cves, ...kevAlerts]} />
         <h2>EVENT DETAILS</h2>
 
         {selectedCorrelation ? (

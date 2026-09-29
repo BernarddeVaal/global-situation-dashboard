@@ -1,0 +1,6 @@
+# Versions used for the successful local CPU verification.
+# Install CPU PyTorch separately; see ASSESSMENT.md.
+sentence-transformers==5.7.0
+transformers==5.17.0
+huggingface_hub==1.33.0
+numpy==2.5.3

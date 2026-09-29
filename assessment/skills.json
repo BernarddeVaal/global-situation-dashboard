@@ -1,0 +1,7 @@
+[
+  {"id":"earthquake-review","type":"Earthquake","text":"earthquake-review | Review earthquake magnitudes and locations | Summarise earthquake records, report the largest recorded magnitude and note that impact also depends on depth, exposure and building vulnerability. Do not predict earthquakes."},
+  {"id":"volcano-review","type":"Volcano","text":"volcano-review | Review open volcano monitoring records | Count available volcano events and list their titles. An open event is not proof of an imminent eruption or its severity."},
+  {"id":"vulnerability-review","type":"CVE","text":"vulnerability-review | Review CVE and CVSS vulnerability records | Count CVE records and report the highest supplied CVSS. Missing scores remain unknown. Scores alone do not prove compromise."},
+  {"id":"exploitation-review","type":"Cyber Alert","text":"exploitation-review | Review known exploited vulnerabilities in CISA KEV records | Count supplied known-exploitation records and list affected vulnerability identifiers. Catalog inclusion does not prove the local system is affected."},
+  {"id":"data-quality-review","type":"ALL","text":"data-quality-review | Check data completeness and limitations | Count supplied events and missing titles, sources and numerical attributes. Separate missing feed data from evidence that no events occurred."}
+]
