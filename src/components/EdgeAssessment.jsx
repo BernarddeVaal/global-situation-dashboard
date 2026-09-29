@@ -85,27 +85,26 @@ export default function EdgeAssessment({ events }) {
 
       {task2 && <>
         <p><strong>Task 2 result:</strong> {result.runsPerModel} runs per model. Model A produced {result.uniqueA} unique answer set(s); Model B produced {result.uniqueB}. {result.interpretation}</p>
-        <div className="task2TableWrap">
-          <table className="task2Table">
-            <thead>
-              <tr>
-                <th>Standard question</th>
-                <th>Model A — Run 1</th>
-                <th>Model A — Run 2</th>
-                <th>Model B — Run 1</th>
-                <th>Model B — Run 2</th>
-              </tr>
-            </thead>
-            <tbody>
-              {task2.map((standardQuestion, index) => <tr key={standardQuestion}>
-                <th>{index + 1}. {standardQuestion}</th>
-                <td>{result.modelA?.[0]?.questions?.[index]?.answer}</td>
-                <td>{result.modelA?.[1]?.questions?.[index]?.answer}</td>
-                <td>{result.modelB?.[0]?.questions?.[index]?.answer}</td>
-                <td>{result.modelB?.[1]?.questions?.[index]?.answer}</td>
-              </tr>)}
-            </tbody>
-          </table>
+        <div className="task2Cards">
+          {task2.map((standardQuestion, index) => <article className="task2QuestionCard" key={standardQuestion}>
+            <h4>{index + 1}. {standardQuestion}</h4>
+            <div className="task2Answer">
+              <strong>Model A — Run 1</strong>
+              <p>{result.modelA?.[0]?.questions?.[index]?.answer}</p>
+            </div>
+            <div className="task2Answer">
+              <strong>Model A — Run 2</strong>
+              <p>{result.modelA?.[1]?.questions?.[index]?.answer}</p>
+            </div>
+            <div className="task2Answer">
+              <strong>Model B — Run 1</strong>
+              <p>{result.modelB?.[0]?.questions?.[index]?.answer}</p>
+            </div>
+            <div className="task2Answer">
+              <strong>Model B — Run 2</strong>
+              <p>{result.modelB?.[1]?.questions?.[index]?.answer}</p>
+            </div>
+          </article>)}
         </div>
       </>}
 
