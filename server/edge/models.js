@@ -2,7 +2,7 @@
 import { createHash, randomInt } from 'node:crypto'
 
 export const LEVELS = ['LOW', 'MODERATE', 'HIGH', 'CRITICAL']
-export const VERSION = '1.1.0'
+export const VERSION = '1.1.1'
 export const STANDARD_QUESTIONS = [
   'Is there significant seismic activity right now, based on the current data?',
   'Which region currently shows the highest overall risk?',
