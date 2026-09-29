@@ -1,6 +1,10 @@
 import { Router } from 'express'
-import { normalize, deterministic, probabilistic, compare, snapshotHash } from './models.js'
+import {
+  normalize, deterministic, probabilistic, compare, snapshotHash, standardQuestionComparison,
+} from './models.js'
+
 const router = Router()
+
 router.post('/run', (req, res) => {
   try {
     const events = normalize(req.body.events)
@@ -9,10 +13,20 @@ router.post('/run', (req, res) => {
     res.json({ snapshotHash: snapshotHash(events), output })
   } catch (error) { res.status(400).json({ error: error.message }) }
 })
+
 router.post('/compare', (req, res) => {
   try { res.json(compare(normalize(req.body.events))) }
   catch (error) { res.status(400).json({ error: error.message }) }
 })
+
+router.post('/questions', (req, res) => {
+  try {
+    const events = normalize(req.body.events)
+    if (!events.length) throw new Error('Freeze dashboard events before running Task 2.')
+    res.json(standardQuestionComparison(events, 2))
+  } catch (error) { res.status(400).json({ error: error.message }) }
+})
+
 router.post('/r3', async (req, res) => {
   try {
     const events = normalize(req.body.events)
@@ -28,4 +42,5 @@ router.post('/r3', async (req, res) => {
     res.status(503).json({ error: 'Tencent R3-Skill unavailable. Install its weights and start the local Python service (see ASSESSMENT.md). No substitute model was used.' })
   }
 })
+
 export default router
