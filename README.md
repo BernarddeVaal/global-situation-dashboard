@@ -11,7 +11,7 @@ See [ASSESSMENT.md](ASSESSMENT.md) for implementation and recording instructions
 
 Existing ICE Task 3 evidence: [A/B comparison](edge-assessment-evidence.json) and [Model C evidence](model%20c%20evidence.json). The files under `assessment/` also include development verification evidence; see their provenance in [VERIFICATION.md](assessment/VERIFICATION.md).
 
-Audit on 29 September 2026: ICE Task 4 code is present (model version 1.1.1). The corrected `task2-standard-questions-evidence (1).json` was reviewed separately but is not committed here. No assessment video is present in this branch. Repository contents do not confirm submission through the college portal.
+Updated 30 September 2026: ICE Task 4 model version 1.2.0 and the final [recorded-run evidence](assessment/ice-task-4-standard-questions-evidence.json) are committed. See the [ICE Task 4 submission guide](assessment/ICE_TASK_4.md) for results and model identification. The video is supplied separately through the submission portal; it is not hosted in this repository.
 
 ---
 

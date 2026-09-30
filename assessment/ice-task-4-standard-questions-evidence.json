@@ -1,0 +1,1057 @@
+{
+  "schemaVersion": 2,
+  "assignment": "ICE Task 4",
+  "capturedAt": "2026-09-30T12:24:32.160Z",
+  "exportedAt": "2026-09-30T12:34:40.242Z",
+  "source": "Fetched dashboard data — captured 2026-09-30T12:24:32.160Z",
+  "synthetic": false,
+  "snapshot": [
+    {
+      "id": "us6000tyjl",
+      "type": "Earthquake",
+      "title": "M4.4 Earthquake",
+      "location": "47 km S of Trà My, Vietnam",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 1:24:41 PM",
+      "source": "USGS",
+      "magnitude": 4.4
+    },
+    {
+      "id": "us6000tyjb",
+      "type": "Earthquake",
+      "title": "M5 Earthquake",
+      "location": "27 km N of Kupang, Indonesia",
+      "details": "Depth: 19 km",
+      "time": "9/30/2026, 12:58:50 PM",
+      "source": "USGS",
+      "magnitude": 5
+    },
+    {
+      "id": "pr2026273001",
+      "type": "Earthquake",
+      "title": "M3.58 Earthquake",
+      "location": "127 km NNE of Vieques, Puerto Rico",
+      "details": "Depth: 77 km",
+      "time": "9/30/2026, 12:56:40 PM",
+      "source": "USGS",
+      "magnitude": 3.58
+    },
+    {
+      "id": "aka2026tjfajm",
+      "type": "Earthquake",
+      "title": "M3.1 Earthquake",
+      "location": "26 km N of Glacier View, Alaska",
+      "details": "Depth: 21 km",
+      "time": "9/30/2026, 12:31:47 PM",
+      "source": "USGS",
+      "magnitude": 3.1
+    },
+    {
+      "id": "tx2026tgcgrj",
+      "type": "Earthquake",
+      "title": "M3.1 Earthquake",
+      "location": "20 km WNW of Stanton, Texas",
+      "details": "Depth: 8 km",
+      "time": "9/30/2026, 12:25:49 PM",
+      "source": "USGS",
+      "magnitude": 3.1
+    },
+    {
+      "id": "pr2026273000",
+      "type": "Earthquake",
+      "title": "M3.6 Earthquake",
+      "location": "109 km NE of Cruz Bay, U.S. Virgin Islands",
+      "details": "Depth: 80 km",
+      "time": "9/30/2026, 11:19:50 AM",
+      "source": "USGS",
+      "magnitude": 3.6
+    },
+    {
+      "id": "hv75045792",
+      "type": "Earthquake",
+      "title": "M2.58 Earthquake",
+      "location": "25 km ESE of Honaunau-Napoopoo, Hawaii",
+      "details": "Depth: -1 km",
+      "time": "9/30/2026, 10:59:57 AM",
+      "source": "USGS",
+      "magnitude": 2.58
+    },
+    {
+      "id": "tx2026tfzcgy",
+      "type": "Earthquake",
+      "title": "M3.2 Earthquake",
+      "location": "62 km S of Whites City, New Mexico",
+      "details": "Depth: 7 km",
+      "time": "9/30/2026, 10:50:13 AM",
+      "source": "USGS",
+      "magnitude": 3.2
+    },
+    {
+      "id": "aka2026tjasea",
+      "type": "Earthquake",
+      "title": "M2.5 Earthquake",
+      "location": "7 km WSW of Willow, Alaska",
+      "details": "Depth: 5 km",
+      "time": "9/30/2026, 10:22:22 AM",
+      "source": "USGS",
+      "magnitude": 2.5
+    },
+    {
+      "id": "us6000tyit",
+      "type": "Earthquake",
+      "title": "M5.1 Earthquake",
+      "location": "121 km S of Kokopo, Papua New Guinea",
+      "details": "Depth: 28 km",
+      "time": "9/30/2026, 10:15:17 AM",
+      "source": "USGS",
+      "magnitude": 5.1
+    },
+    {
+      "id": "us6000tyil",
+      "type": "Earthquake",
+      "title": "M4.2 Earthquake",
+      "location": "11 km WNW of Ashkāsham, Afghanistan",
+      "details": "Depth: 171 km",
+      "time": "9/30/2026, 9:39:02 AM",
+      "source": "USGS",
+      "magnitude": 4.2
+    },
+    {
+      "id": "us6000tyik",
+      "type": "Earthquake",
+      "title": "M5.2 Earthquake",
+      "location": "Balleny Islands region",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 9:07:16 AM",
+      "source": "USGS",
+      "magnitude": 5.2
+    },
+    {
+      "id": "us6000tyid",
+      "type": "Earthquake",
+      "title": "M5 Earthquake",
+      "location": "83 km NE of Tadine, New Caledonia",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 8:50:03 AM",
+      "source": "USGS",
+      "magnitude": 5
+    },
+    {
+      "id": "us6000tyhn",
+      "type": "Earthquake",
+      "title": "M4.6 Earthquake",
+      "location": "3 km W of Thívai, Greece",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 7:20:59 AM",
+      "source": "USGS",
+      "magnitude": 4.6
+    },
+    {
+      "id": "us6000tyhk",
+      "type": "Earthquake",
+      "title": "M5.6 Earthquake",
+      "location": "74 km S of Yonakuni, Japan",
+      "details": "Depth: 11 km",
+      "time": "9/30/2026, 7:00:24 AM",
+      "source": "USGS",
+      "magnitude": 5.6
+    },
+    {
+      "id": "us6000tyhi",
+      "type": "Earthquake",
+      "title": "M5.4 Earthquake",
+      "location": "Balleny Islands region",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 6:48:06 AM",
+      "source": "USGS",
+      "magnitude": 5.4
+    },
+    {
+      "id": "us6000tyhe",
+      "type": "Earthquake",
+      "title": "M4.2 Earthquake",
+      "location": "39 km W of Plan de Ayala, Mexico",
+      "details": "Depth: 178 km",
+      "time": "9/30/2026, 6:06:59 AM",
+      "source": "USGS",
+      "magnitude": 4.2
+    },
+    {
+      "id": "ci41340823",
+      "type": "Earthquake",
+      "title": "M3.81008714964485 Earthquake",
+      "location": "4 km SE of Piru, CA",
+      "details": "Depth: 11 km",
+      "time": "9/30/2026, 5:00:27 AM",
+      "source": "USGS",
+      "magnitude": 3.81008714964485
+    },
+    {
+      "id": "us6000tyh0",
+      "type": "Earthquake",
+      "title": "M4.5 Earthquake",
+      "location": "112 km SSW of Banda Aceh, Indonesia",
+      "details": "Depth: 34 km",
+      "time": "9/30/2026, 4:35:50 AM",
+      "source": "USGS",
+      "magnitude": 4.5
+    },
+    {
+      "id": "us6000tygz",
+      "type": "Earthquake",
+      "title": "M4.5 Earthquake",
+      "location": "104 km SSE of Sarangani, Philippines",
+      "details": "Depth: 157 km",
+      "time": "9/30/2026, 4:30:44 AM",
+      "source": "USGS",
+      "magnitude": 4.5
+    },
+    {
+      "id": "us6000tygs",
+      "type": "Earthquake",
+      "title": "M4.8 Earthquake",
+      "location": "18 km SW of Tayaman, Philippines",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 3:34:05 AM",
+      "source": "USGS",
+      "magnitude": 4.8
+    },
+    {
+      "id": "us6000tygq",
+      "type": "Earthquake",
+      "title": "M4.8 Earthquake",
+      "location": "75 km NE of Tadine, New Caledonia",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 3:17:47 AM",
+      "source": "USGS",
+      "magnitude": 4.8
+    },
+    {
+      "id": "hv75045547",
+      "type": "Earthquake",
+      "title": "M2.53 Earthquake",
+      "location": "9 km SSW of Puako, Hawaii",
+      "details": "Depth: 39 km",
+      "time": "9/30/2026, 3:07:33 AM",
+      "source": "USGS",
+      "magnitude": 2.53
+    },
+    {
+      "id": "us6000tygh",
+      "type": "Earthquake",
+      "title": "M4.4 Earthquake",
+      "location": "142 km SSW of La Esperanza (El Zapotal), Mexico",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 2:25:25 AM",
+      "source": "USGS",
+      "magnitude": 4.4
+    },
+    {
+      "id": "nc75441671",
+      "type": "Earthquake",
+      "title": "M2.49 Earthquake",
+      "location": "12 km NNE of San Lucas, CA",
+      "details": "Depth: 5 km",
+      "time": "9/30/2026, 1:39:46 AM",
+      "source": "USGS",
+      "magnitude": 2.49
+    },
+    {
+      "id": "us6000tyfk",
+      "type": "Earthquake",
+      "title": "M4.5 Earthquake",
+      "location": "15 km SW of San Antonio, Colombia",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 11:50:29 PM",
+      "source": "USGS",
+      "magnitude": 4.5
+    },
+    {
+      "id": "uw714111952",
+      "type": "Earthquake",
+      "title": "M4.15 Earthquake",
+      "location": "6 km WNW of Wauna, Washington",
+      "details": "Depth: 28 km",
+      "time": "9/29/2026, 11:05:56 PM",
+      "source": "USGS",
+      "magnitude": 4.15
+    },
+    {
+      "id": "us6000tyf0",
+      "type": "Earthquake",
+      "title": "M4.7 Earthquake",
+      "location": "49 km N of Dicabisagan, Philippines",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 10:45:50 PM",
+      "source": "USGS",
+      "magnitude": 4.7
+    },
+    {
+      "id": "us6000tye9",
+      "type": "Earthquake",
+      "title": "M4.1 Earthquake",
+      "location": "92 km NE of San Pedro de Atacama, Chile",
+      "details": "Depth: 178 km",
+      "time": "9/29/2026, 8:21:49 PM",
+      "source": "USGS",
+      "magnitude": 4.1
+    },
+    {
+      "id": "us6000tycv",
+      "type": "Earthquake",
+      "title": "M4.8 Earthquake",
+      "location": "44 km NNE of Fangale’ounga, Tonga",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 6:12:56 PM",
+      "source": "USGS",
+      "magnitude": 4.8
+    },
+    {
+      "id": "nc75444432",
+      "type": "Earthquake",
+      "title": "M2.58 Earthquake",
+      "location": "6 km W of Yountville, CA",
+      "details": "Depth: 8 km",
+      "time": "9/29/2026, 6:06:37 PM",
+      "source": "USGS",
+      "magnitude": 2.58
+    },
+    {
+      "id": "us6000tycz",
+      "type": "Earthquake",
+      "title": "M4.6 Earthquake",
+      "location": "West Chile Rise",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 5:31:18 PM",
+      "source": "USGS",
+      "magnitude": 4.6
+    },
+    {
+      "id": "us6000tyck",
+      "type": "Earthquake",
+      "title": "M4.9 Earthquake",
+      "location": "South Sandwich Islands region",
+      "details": "Depth: 115 km",
+      "time": "9/29/2026, 5:17:18 PM",
+      "source": "USGS",
+      "magnitude": 4.9
+    },
+    {
+      "id": "us6000tych",
+      "type": "Earthquake",
+      "title": "M4.4 Earthquake",
+      "location": "192 km ESE of Mil’kovo, Russia",
+      "details": "Depth: 54 km",
+      "time": "9/29/2026, 4:40:28 PM",
+      "source": "USGS",
+      "magnitude": 4.4
+    },
+    {
+      "id": "us6000tyc9",
+      "type": "Earthquake",
+      "title": "M5 Earthquake",
+      "location": "58 km NW of Pante Makasar, Timor Leste",
+      "details": "Depth: 158 km",
+      "time": "9/29/2026, 4:14:06 PM",
+      "source": "USGS",
+      "magnitude": 5
+    },
+    {
+      "id": "us6000tyc3",
+      "type": "Earthquake",
+      "title": "M5.6 Earthquake",
+      "location": "southern Mid-Atlantic Ridge",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 3:06:10 PM",
+      "source": "USGS",
+      "magnitude": 5.6
+    },
+    {
+      "id": "us6000tyc1",
+      "type": "Earthquake",
+      "title": "M5.4 Earthquake",
+      "location": "99 km SSE of Pangai, Tonga",
+      "details": "Depth: 10 km",
+      "time": "9/29/2026, 2:40:35 PM",
+      "source": "USGS",
+      "magnitude": 5.4
+    },
+    {
+      "id": "EONET_20710",
+      "type": "Volcano",
+      "title": "Nevados del Chillan Volcano, Chile",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-06-15T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20409",
+      "type": "Volcano",
+      "title": "Telica Volcano, Nicaragua",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-30T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20392",
+      "type": "Volcano",
+      "title": "Ivao Group Volcano, Russia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-29T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20395",
+      "type": "Volcano",
+      "title": "Titan Ridge Volcano, Papua New Guinea",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-28T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20411",
+      "type": "Volcano",
+      "title": "Kikai Volcano, Japan",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-17T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20410",
+      "type": "Volcano",
+      "title": "Bezymianny Volcano, Russia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-16T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20413",
+      "type": "Volcano",
+      "title": "Langila Volcano, Papua New Guinea",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-08T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20103",
+      "type": "Volcano",
+      "title": "Rincon de la Vieja Volcano, Costa Rica",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-04-27T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_20102",
+      "type": "Volcano",
+      "title": "Masaya Volcano, Nicaragua",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-04-26T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_17165",
+      "type": "Volcano",
+      "title": "Mayon Volcano, Philippines",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-01-07T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_17166",
+      "type": "Volcano",
+      "title": "Sabancaya Volcano, Peru",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-12-29T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_16203",
+      "type": "Volcano",
+      "title": "Ambae Volcano, Vanuatu",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-12-03T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_16202",
+      "type": "Volcano",
+      "title": "Puracé Volcano, Colombia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-12-02T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_15811",
+      "type": "Volcano",
+      "title": "Kanlaon Volcano, Philippines",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-09-10T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_15330",
+      "type": "Volcano",
+      "title": "Krasheninnikov Volcano, Russia",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-08-25T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_13342",
+      "type": "Volcano",
+      "title": "Popocatepetl Volcano, Mexico",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-04-10T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_12813",
+      "type": "Volcano",
+      "title": "Lewotolok Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2025-02-19T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_12367",
+      "type": "Volcano",
+      "title": "Kilauea Volcano, Hawaii",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2024-12-23T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_10631",
+      "type": "Volcano",
+      "title": "Sheveluch Volcano, Russia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2024-08-17T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_9679",
+      "type": "Volcano",
+      "title": "Suwanosejima Volcano, Japan",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2024-08-02T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6470",
+      "type": "Volcano",
+      "title": "Lewotobi Volcano, Indonesia",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2023-12-28T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6462",
+      "type": "Volcano",
+      "title": "Marapi Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2023-12-03T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6452",
+      "type": "Volcano",
+      "title": "Dukono Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2023-11-07T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6369",
+      "type": "Volcano",
+      "title": "Ibu Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2023-06-06T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6175",
+      "type": "Volcano",
+      "title": "Stromboli Volcano, Italy",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2022-08-07T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_6104",
+      "type": "Volcano",
+      "title": "Aira Volcano, Japan",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2022-06-27T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_5202",
+      "type": "Volcano",
+      "title": "Merapi Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2021-01-07T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_4624",
+      "type": "Volcano",
+      "title": "Santa Maria Volcano, Guatemala",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2020-03-18T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_4561",
+      "type": "Volcano",
+      "title": "Semeru Volcano, Indonesia",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2020-01-18T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_4269",
+      "type": "Volcano",
+      "title": "Reventador Volcano, Ecuador",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2019-07-10T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_4156",
+      "type": "Volcano",
+      "title": "Sangay Volcano, Ecuador",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2019-03-26T09:19:10Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "EONET_980",
+      "type": "Volcano",
+      "title": "Fuego Volcano, Guatemala",
+      "location": "CEMS",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2002-01-04T00:00:00Z",
+      "source": "NASA EONET"
+    },
+    {
+      "id": "CVE-2026-100756",
+      "type": "CVE",
+      "title": "CVE-2026-100756",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nIncorrect boundary conditions in the Audio/Video: Playback component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:39.950",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100757",
+      "type": "CVE",
+      "title": "CVE-2026-100757",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the Widget component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.047",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100758",
+      "type": "CVE",
+      "title": "CVE-2026-100758",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nSandbox escape in the DOM: Navigation component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.130",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100759",
+      "type": "CVE",
+      "title": "CVE-2026-100759",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nUninitialized memory in the Storage: Quota Manager component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.213",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100760",
+      "type": "CVE",
+      "title": "CVE-2026-100760",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nSandbox escape in the Security: Process Sandboxing component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "time": "2026-09-29T13:17:40.300",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100761",
+      "type": "CVE",
+      "title": "CVE-2026-100761",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nPrivilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "time": "2026-09-29T13:17:40.390",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100762",
+      "type": "CVE",
+      "title": "CVE-2026-100762",
+      "location": "Cyber Intelligence",
+      "details": "Severity: CRITICAL\nCVSS Score: 9.6\n\nSandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.470",
+      "source": "NVD",
+      "cvss": 9.6
+    },
+    {
+      "id": "CVE-2026-100763",
+      "type": "CVE",
+      "title": "CVE-2026-100763",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nIncorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "time": "2026-09-29T13:17:40.560",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100764",
+      "type": "CVE",
+      "title": "CVE-2026-100764",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nPrivilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "time": "2026-09-29T13:17:40.640",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100765",
+      "type": "CVE",
+      "title": "CVE-2026-100765",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "time": "2026-09-29T13:17:40.730",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100766",
+      "type": "CVE",
+      "title": "CVE-2026-100766",
+      "location": "Cyber Intelligence",
+      "details": "Severity: MEDIUM\nCVSS Score: 4.3\n\nInformation disclosure in the Networking: JAR component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.837",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "CVE-2026-100767",
+      "type": "CVE",
+      "title": "CVE-2026-100767",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the Networking: Cache component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:40.940",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100768",
+      "type": "CVE",
+      "title": "CVE-2026-100768",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "time": "2026-09-29T13:17:41.043",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100769",
+      "type": "CVE",
+      "title": "CVE-2026-100769",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.143",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100770",
+      "type": "CVE",
+      "title": "CVE-2026-100770",
+      "location": "Cyber Intelligence",
+      "details": "Severity: CRITICAL\nCVSS Score: 9.6\n\nSandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.250",
+      "source": "NVD",
+      "cvss": 9.6
+    },
+    {
+      "id": "CVE-2026-100771",
+      "type": "CVE",
+      "title": "CVE-2026-100771",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nUndefined behavior in the DOM: Streams component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.353",
+      "source": "NVD",
+      "cvss": null
+    },
+    {
+      "id": "CVE-2026-100772",
+      "type": "CVE",
+      "title": "CVE-2026-100772",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.450",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100773",
+      "type": "CVE",
+      "title": "CVE-2026-100773",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the Storage: IndexedDB component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.717",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100774",
+      "type": "CVE",
+      "title": "CVE-2026-100774",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nUse-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:41.870",
+      "source": "NVD",
+      "cvss": 8.8
+    },
+    {
+      "id": "CVE-2026-100775",
+      "type": "CVE",
+      "title": "CVE-2026-100775",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: null\n\nSandbox escape in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "time": "2026-09-29T13:17:42.083",
+      "source": "NVD",
+      "cvss": null
+    }
+  ],
+  "result": {
+    "snapshotHash": "cd13c0b99f460c7923dcf52de1186d47df8c7c03bec062171a3965182dd1c7dd",
+    "standardQuestions": [
+      "Is there significant seismic activity right now, based on the current data?",
+      "Which region currently shows the highest overall risk?",
+      "Summarise today's cybersecurity threat level in one sentence.",
+      "Is volcanic activity trending up or down this week?",
+      "Give one recommendation based on current global risk levels.",
+      "How confident are you in this assessment, and why?"
+    ],
+    "runsPerModel": 2,
+    "modelA": [
+      {
+        "model": "A",
+        "version": "1.2.0",
+        "method": "fixed rules, no sampling",
+        "questions": [
+          {
+            "question": "Is there significant seismic activity right now, based on the current data?",
+            "answer": "Yes, under the classroom threshold. The snapshot contains 37 earthquakes, with a highest recorded magnitude of 5.6 at 74 km S of Yonakuni, Japan; under this classroom model, magnitude 5 or above is prioritised as HIGH."
+          },
+          {
+            "question": "Which region currently shows the highest overall risk?",
+            "answer": "Balleny Islands region ranks first for earthquake review priority among usable earthquake region labels in this snapshot; this is not an overall multi-hazard risk ranking, based on 2 HIGH/CRITICAL event(s) and 2 supplied event(s)."
+          },
+          {
+            "question": "Summarise today's cybersecurity threat level in one sentence.",
+            "answer": "The snapshot indicates CRITICAL rule-based cyber review priority because the snapshot contains 20 cyber records and the most severe supplied item is CVE-2026-100762 with CVSS 9.6."
+          },
+          {
+            "question": "Is volcanic activity trending up or down this week?",
+            "answer": "The direction cannot be determined from this snapshot: 32 open volcano record(s) are present, but a single current snapshot does not provide the historical weekly series needed to establish an up-or-down trend."
+          },
+          {
+            "question": "Give one recommendation based on current global risk levels.",
+            "answer": "Prioritise manual review of the 21 HIGH/CRITICAL items first, verify them against their source feeds, and escalate only where local exposure or impact is confirmed."
+          },
+          {
+            "question": "How confident are you in this assessment, and why?",
+            "answer": "Moderate confidence: the answer is exactly reproducible from the frozen snapshot and transparent rules, but the model uses simplified classroom thresholds and incomplete point-in-time data rather than calibrated real-world impact probabilities."
+          }
+        ]
+      },
+      {
+        "model": "A",
+        "version": "1.2.0",
+        "method": "fixed rules, no sampling",
+        "questions": [
+          {
+            "question": "Is there significant seismic activity right now, based on the current data?",
+            "answer": "Yes, under the classroom threshold. The snapshot contains 37 earthquakes, with a highest recorded magnitude of 5.6 at 74 km S of Yonakuni, Japan; under this classroom model, magnitude 5 or above is prioritised as HIGH."
+          },
+          {
+            "question": "Which region currently shows the highest overall risk?",
+            "answer": "Balleny Islands region ranks first for earthquake review priority among usable earthquake region labels in this snapshot; this is not an overall multi-hazard risk ranking, based on 2 HIGH/CRITICAL event(s) and 2 supplied event(s)."
+          },
+          {
+            "question": "Summarise today's cybersecurity threat level in one sentence.",
+            "answer": "The snapshot indicates CRITICAL rule-based cyber review priority because the snapshot contains 20 cyber records and the most severe supplied item is CVE-2026-100762 with CVSS 9.6."
+          },
+          {
+            "question": "Is volcanic activity trending up or down this week?",
+            "answer": "The direction cannot be determined from this snapshot: 32 open volcano record(s) are present, but a single current snapshot does not provide the historical weekly series needed to establish an up-or-down trend."
+          },
+          {
+            "question": "Give one recommendation based on current global risk levels.",
+            "answer": "Prioritise manual review of the 21 HIGH/CRITICAL items first, verify them against their source feeds, and escalate only where local exposure or impact is confirmed."
+          },
+          {
+            "question": "How confident are you in this assessment, and why?",
+            "answer": "Moderate confidence: the answer is exactly reproducible from the frozen snapshot and transparent rules, but the model uses simplified classroom thresholds and incomplete point-in-time data rather than calibrated real-world impact probabilities."
+          }
+        ]
+      }
+    ],
+    "modelB": [
+      {
+        "model": "B",
+        "version": "1.2.0",
+        "method": "categorical sampling; sigma=0.85; no fixed seed",
+        "questions": [
+          {
+            "question": "Is there significant seismic activity right now, based on the current data?",
+            "answer": "Yes, under the classroom threshold. The snapshot contains 37 earthquakes, with a highest recorded magnitude of 5.6 at 74 km S of Yonakuni, Japan; under this classroom model, magnitude 5 or above is prioritised as HIGH."
+          },
+          {
+            "question": "Which region currently shows the highest overall risk?",
+            "answer": "Balleny Islands region ranks first for earthquake review priority among usable earthquake region labels in this snapshot; this is not an overall multi-hazard risk ranking, based on 2 HIGH/CRITICAL event(s) and 2 supplied event(s)."
+          },
+          {
+            "question": "Summarise today's cybersecurity threat level in one sentence.",
+            "answer": "The snapshot indicates CRITICAL rule-based cyber review priority because the snapshot contains 20 cyber records and the most severe supplied item is CVE-2026-100762 with CVSS 9.6."
+          },
+          {
+            "question": "Is volcanic activity trending up or down this week?",
+            "answer": "The direction cannot be determined from this snapshot: 32 open volcano record(s) are present, but a single current snapshot does not provide the historical weekly series needed to establish an up-or-down trend."
+          },
+          {
+            "question": "Give one recommendation based on current global risk levels.",
+            "answer": "Prioritise manual review of the 30 HIGH/CRITICAL items first, verify them against their source feeds, and escalate only where local exposure or impact is confirmed."
+          },
+          {
+            "question": "How confident are you in this assessment, and why?",
+            "answer": "Moderate-to-low confidence in the sampled labels: the same frozen data and probability vectors are used, but Model B deliberately samples outcomes without a fixed seed, and its demonstration probabilities are not trained or calibrated real-world risk probabilities."
+          }
+        ]
+      },
+      {
+        "model": "B",
+        "version": "1.2.0",
+        "method": "categorical sampling; sigma=0.85; no fixed seed",
+        "questions": [
+          {
+            "question": "Is there significant seismic activity right now, based on the current data?",
+            "answer": "Yes, under the classroom threshold. The snapshot contains 37 earthquakes, with a highest recorded magnitude of 5.6 at 74 km S of Yonakuni, Japan; under this classroom model, magnitude 5 or above is prioritised as HIGH."
+          },
+          {
+            "question": "Which region currently shows the highest overall risk?",
+            "answer": "New Caledonia ranks first for earthquake review priority among usable earthquake region labels in this snapshot; this is not an overall multi-hazard risk ranking, based on 2 HIGH/CRITICAL event(s) and 2 supplied event(s)."
+          },
+          {
+            "question": "Summarise today's cybersecurity threat level in one sentence.",
+            "answer": "The snapshot indicates CRITICAL rule-based cyber review priority because the snapshot contains 20 cyber records and the most severe supplied item is CVE-2026-100762 with CVSS 9.6."
+          },
+          {
+            "question": "Is volcanic activity trending up or down this week?",
+            "answer": "The direction cannot be determined from this snapshot: 32 open volcano record(s) are present, but a single current snapshot does not provide the historical weekly series needed to establish an up-or-down trend."
+          },
+          {
+            "question": "Give one recommendation based on current global risk levels.",
+            "answer": "Prioritise manual review of the 35 HIGH/CRITICAL items first, verify them against their source feeds, and escalate only where local exposure or impact is confirmed."
+          },
+          {
+            "question": "How confident are you in this assessment, and why?",
+            "answer": "Moderate-to-low confidence in the sampled labels: the same frozen data and probability vectors are used, but Model B deliberately samples outcomes without a fixed seed, and its demonstration probabilities are not trained or calibrated real-world risk probabilities."
+          }
+        ]
+      }
+    ],
+    "uniqueA": 1,
+    "uniqueB": 2,
+    "assignment": "ICE Task 4",
+    "completedAt": "2026-09-30T12:24:40.341Z",
+    "comparison": [
+      {
+        "question": "Is there significant seismic activity right now, based on the current data?",
+        "uniqueA": 1,
+        "uniqueB": 1,
+        "changedA": false,
+        "changedB": false
+      },
+      {
+        "question": "Which region currently shows the highest overall risk?",
+        "uniqueA": 1,
+        "uniqueB": 2,
+        "changedA": false,
+        "changedB": true
+      },
+      {
+        "question": "Summarise today's cybersecurity threat level in one sentence.",
+        "uniqueA": 1,
+        "uniqueB": 1,
+        "changedA": false,
+        "changedB": false
+      },
+      {
+        "question": "Is volcanic activity trending up or down this week?",
+        "uniqueA": 1,
+        "uniqueB": 1,
+        "changedA": false,
+        "changedB": false
+      },
+      {
+        "question": "Give one recommendation based on current global risk levels.",
+        "uniqueA": 1,
+        "uniqueB": 2,
+        "changedA": false,
+        "changedB": true
+      },
+      {
+        "question": "How confident are you in this assessment, and why?",
+        "uniqueA": 1,
+        "uniqueB": 1,
+        "changedA": false,
+        "changedB": false
+      }
+    ],
+    "interpretation": "Repeatability is not accuracy. Model A should repeat exactly. Model B may vary because it samples priorities; identical draws are also valid. Two runs cannot estimate reliability. Seismic facts, cyber source severity and the missing volcano trend remain grounded in the same snapshot."
+  }
+}
